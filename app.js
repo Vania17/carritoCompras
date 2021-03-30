@@ -10,8 +10,11 @@ let carrito = {}
 
 document.addEventListener('DOMContentLoaded', ()=>{
     fetchData();
-})
-
+    if(localStorage.getItem('carrito')){
+        carrito= JSON.parse(localStorage.getItem('carrito'));
+        pintarCarrito();
+    }
+});
 cards.addEventListener('click', e=>{
     addCarrito(e);
 })
@@ -51,6 +54,7 @@ const addCarrito = e=>{
     if(e.target.classList.contains('btn-dark')){
         setCarrito(e.target.parentElement);
     }
+    e.stopPropagation();
 }
 
 const setCarrito = objeto =>{
@@ -63,8 +67,9 @@ const setCarrito = objeto =>{
     }
     // console.log(producto)
     if(carrito.hasOwnProperty(producto.id)){
-        
+        producto.cantidad =  carrito[producto.id].cantidad + 1
     }
+
     carrito[producto.id] = {...producto}
     pintarCarrito();
 }
@@ -85,6 +90,8 @@ const pintarCarrito = ()=>{
     items.appendChild(fragment);
 
     pintarfooter();
+
+    localStorage.setItem('carrito',JSON.stringify(carrito))
 }
 
 const pintarfooter = ()=>{
