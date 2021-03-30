@@ -1,0 +1,56 @@
+[
+    {
+      "precio": 35,
+      "id": 1,
+      "title": "Mora granulada",
+      "thumbnailUrl": "img/1.png"
+    },
+    {
+      "precio": 35,
+      "id": 2,
+      "title": "Tajada sandía",
+      "thumbnailUrl": "img/2.png"
+    },
+    {
+      "precio": 30,
+      "id": 3,
+      "title": "Gusanito ácido",
+      "thumbnailUrl": "img/3.png"
+    },
+    {
+      "precio": 30,
+      "id": 4,
+      "title": "Aritos",
+      "thumbnailUrl": "img/4.png"
+    },
+    {
+      "precio": 35,
+      "id": 5,
+      "title": "Mora lisa",
+      "thumbnailUrl": "img/5.png"
+    },
+    {
+      "precio": 30,
+      "id": 6,
+      "title": "Gajo mandarina",
+      "thumbnailUrl": "img/6.png"
+    },
+    {
+      "precio": 30,
+      "id": 7,
+      "title": "Frutitas",
+      "thumbnailUrl": "img/7.png"
+    },
+    {
+      "precio": 45,
+      "id": 8,
+      "title": "Tira sandía",
+      "thumbnailUrl": "img/8.png"
+    },
+    {
+      "precio": 30,
+      "id": 9,
+      "title": "Corazones",
+      "thumbnailUrl": "img/9.png"
+    }
+  ]
