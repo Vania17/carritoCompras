@@ -25,7 +25,7 @@ items.addEventListener('click', e =>{
 
 const fetchData = async() => {
     try{
-        const res = await fetch('http://localhost/carritoCompras2/api.json');
+        const res = await fetch('https://vania17.github.io/carritoCompras/api.json');
         const data = await res.json();
         
         pintarCards(data);
